@@ -1,1 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.thumbs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 320px;
+}
+
+.imgTile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
+}
+
+.imgTile:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
+
+.big-image-container {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#big {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #000;
+}
